@@ -1,0 +1,349 @@
+/*形式不展示*/
+.noe{
+      display: none;
+        }
+
+.sel_mask{ /*将相对定位*/
+
+
+    position:relative;
+
+    width:200px;
+
+    height:25px;
+
+    background:rgba(255, 255, 255, 0.2);
+
+    border-radius: 5px;
+
+    box-shadow:1px 1px 5px rgba(255, 255, 255, 0.2);
+
+    display:inline-block;
+
+    text-decoration: none;
+
+}
+
+
+.sel_mask:hover{ /*添加hover效果*/
+
+    background:#169BD5;
+
+}
+
+
+.sel_mask select{ /*以相同大小将绝对定位*/
+
+    top:0px;
+
+    left:0px;
+
+    position:absolute;
+
+    width:200px;
+
+    height:25px;
+
+    opacity:0;
+
+}
+
+/*字体设置*/
+.sel_mask select option[selected]{
+
+    font-weight:bold
+
+}
+/*颜色改变*/
+.sel_mask select option:nth-child(even) {
+
+    background-color:#A7DAEF;
+
+}
+
+.sel_mask select option{
+
+    color:#EA5400;
+
+}
+
+.sel_mask span{ /*显示内容*/
+
+    position: absolute;
+
+    top:3px;
+
+    left:5px;
+
+    right: 20px;
+
+    display: inline-block;
+
+    color:#fff;
+
+    overflow:hidden;
+
+    text-overflow: ellipsis;
+
+    white-space:nowrap;
+
+}
+
+.sel_mask img{ /*箭头图标*/
+
+    display: inline-block;
+
+    position: absolute;
+
+    top:2px;
+
+    right: 5px;
+
+}
+
+.border1{
+    display: flex;
+}
+/*未用到*/
+.title_all{
+        top:0px;
+            width:100%;
+            font-size: 60px;
+            font-family: "宋体",sans-serif;
+            color: white;
+            font-style: italic;
+            text-align: center;
+            clear: left;
+}
+
+.col-xs-3{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100px;
+}
+
+/*区域改变相关设置*/
+.real-items {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 42px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.real-items > div {
+    padding: 0;
+}
+
+.real-items i {
+    font-size: 28px;
+}
+
+.real-items .real-item {
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 2px;
+    height: 96px;
+}
+
+.real-items > div:last-child .real-item {
+    margin-right: 0;
+}
+
+.real-items .real-item div {
+    height: 28px;
+    line-height: 28px;
+}
+
+/*引入图片区域的相关设置*/
+.real-items .icon-rain {
+    background: url("../imgs/icon_rain.png") no-repeat center;
+    height: 30px;
+}
+
+.real-items .icon-sd {
+    background: url("../imgs/icon_sd.png") no-repeat center;
+    height: 30px;
+}
+
+.real-items .icon-tg {
+    background: url("../imgs/icon_tgtemp.png") no-repeat center;
+    height: 30px;
+}
+
+.real-items .icon-sds {
+    background: url("../imgs/icon_sds.png") no-repeat center;
+    height: 30px;
+}
+
+.real-items .icon-ssd {
+    background: url("../imgs/icon_ssd.png") no-repeat center;
+    height: 30px;
+}
+
+/*区域块设置*/
+.rcrl {
+    background: url("../imgs/icon_rcrl.png") no-repeat center top;
+    width: 389px;
+    height: 200px;
+    position: relative;
+    background-position: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    margin-right: 2px;
+    left: 20px;
+}
+
+.sun {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+}
+
+.sun5 {
+    left: 180px;
+    top: -3px;
+}
+
+.cityName {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+
+#realTemperature {
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    line-height: normal;
+    position: relative;
+    padding-top: 40px;
+    color: white;
+}
+
+/*字体颜色设置*/
+.fon{
+    color: white;
+}
+
+
+.rect1{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    left: 20px;
+    display: none;
+}
+.rect2{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    left: 20px;
+    display: none;
+}
+.rect3{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    left: 10px;
+    display: none;
+}
+
+
+/*内容设置*/
+.content1{
+    font-size:20px;
+    padding:3px;
+    margin:3px;
+    color:white;
+    top:4px;
+}
+
+/*小块设置*/
+.col-xs-12{
+    display: none;
+    width:500px;
+}
+
+
+/*设置日期选择框架相关样式*/
+.day7 {}
+
+.weather{
+    width:191px;
+    height:330px;
+    padding:15px 0;
+    text-align:center;
+    color:#fff;
+    cursor:pointer;
+    }
+
+.weather:last-child .weatherWrap{
+    border:0;
+    }
+
+
+.weather div.day1{
+    height: 40px;
+    line-height: 40px;
+    }
+.weather div.day2{
+    height: 40px;
+    line-height: 40px;
+    }
+.weather div.day3{
+    height: 40px;
+    line-height: 40px;
+    }
+.weather div.day4{
+    height: 40px;
+    line-height: 40px;
+    }
+.weather div.day5{
+    height: 40px;
+    line-height: 40px;
+    }
+.weather div.day6{
+    height: 40px;
+    line-height: 40px;
+    }
+.weather div.days{
+    height: 40px;
+    line-height: 40px;
+    }
+
+
+.weather div{
+    height:28px;
+     line-height:28px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 16px;
+      }
+
+.weather div.tmp{
+    height: 32px;
+    line-height: 32px;
+    }
+
+.weather div.date{
+    height: auto;
+    line-height: 25px;
+    }
+
+.selected{
+    background-color:#ff9966;
+    border-radius: 10px;
+}
+
+.weatherWrap{
+    height: auto;
+    line-height: normal;
+    border-right:1px solid grey;}
+
+
+
+.tmp_lte_45{background-color: grey; color: #fff;}
+.tmp_lte_35{background-color: #accaea; color: #fff;}
+
